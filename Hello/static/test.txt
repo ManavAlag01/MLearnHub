@@ -1,0 +1,11 @@
+hello this is the test file and this is the static file
+ {% comment %} <div class="row"> {% endcomment %}
+            {% comment %} <div class="col-md-4"> {% endcomment %}
+                {% comment %} <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <!-- Content removed -->
+                    </div>
+                </div> {% endcomment %}
+            {% comment %} </div> {% endcomment %}
+            <!-- Repeat similar card structures for other items if needed -->
+        {% comment %} </div> {% endcomment %}

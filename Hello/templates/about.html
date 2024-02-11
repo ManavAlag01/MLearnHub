@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock title %}
+{% block body  %}
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background-color: #f2f2f2;
+    }
+    
+    .about-section {
+        padding: 20px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+        margin-bottom: 10px;
+    }
+    
+    .container {
+        padding: 0 16px;
+    }
+    
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 0 8px;
+    }
+    
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+        background-color: white;
+        border-radius: 8px;
+    }
+    
+    .card img {
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .container-info {
+        padding: 16px;
+    }
+    
+    .title {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 5px;
+    }
+    
+    .subtitle {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 15px;
+    }
+    
+    .email {
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+    
+    .button {
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .button:hover {
+        background-color: #0056b3;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .column {
+            width: 100%;
+        }
+    }
+</style>
+
+<div class="about-section">
+    {% comment %} <h1>About Us Page</h1> {% endcomment %}
+   <h3> <p>Our Machine Learning course offers comprehensive instruction on key concepts and techniques, equipping learners with practical skills for data analysis and model development.</p></h3>
+   <h6> <p>Our course, led by experienced instructors, supports beginners and intermediates, building a solid ML base..</p></h6>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="/static/6D.jpeg" alt="Jane">
+            <div class="container-info">
+                <h2>Cartex Singh</h2>
+                <p class="title">Designer</p>
+                <p class="email">cartex@gmail.com</p>
+                <button class="button">Contact</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="/static/5D.jpeg">
+            <div class="container-info">
+                <h2>Manav Alag</h2>
+                <p class="title">CEO & Founder</p>
+                <p class="email">manav@gmail.com</p>
+                <button class="button">Contact</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="column">
+        <div class="card">
+            <img src="/static/6D.jpeg" alt="John">
+            <div class="container-info">
+                <h2>Ceaser Malhotra</h2>
+                <p class="title">Art Director</p>
+                <p class="email">ceaser@gmail.com</p>
+                <button class="button">Contact</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}
